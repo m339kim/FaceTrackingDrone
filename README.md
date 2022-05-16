@@ -25,6 +25,7 @@ Realistically, if we were to test the program outdoors, then there are high chan
 The goal was to identify exactly -one- face from the camera view, so this lead to a conclusion that that closest face detect should be the one to be followed by the drone. The largest item from the `myFaceListArea` meant that the face with that area is the closest to the camera, hence is the one that will be tracked. Also, to avoid confusion, the red rectangle was only drawn on the closest face to the camera to clearly let the users recognize the face that will be followed by the drone. 
 <br /><br />
 The code snippet for this configuration is as follows (from `utils.py`):<br />
+<img width="627" alt="Screen Shot 2022-05-16 at 12 06 22 PM" src="https://user-images.githubusercontent.com/55883282/168638639-4cbdb2e7-a5c6-430e-8c4c-95c6a032b9f3.png">
 
 
 
