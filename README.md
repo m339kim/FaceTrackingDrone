@@ -18,8 +18,14 @@ Realistically, if we were to test the program outdoors, then there are high chan
 <br /><br />
 `myFaceListCenter` is an array that stores the center point of the detected faces.
 > Eg. `myFaceListCenter = [[15, 200], [100, 150], [230, 100]]`
+
 `myFaceListArea` is an array that stores the area of the individual detected faces. (ie. area of the red rectangle)
 > Eg. `myFaceListArea = [300, 280, 100, 270, 335]`
+
+The goal was to identify exactly -one- face from the camera view, so this lead to a conclusion that that closest face detect should be the one to be followed by the drone. The largest item from the `myFaceListArea` meant that the face with that area is the closest to the camera, hence is the one that will be tracked. Also, to avoid confusion, the red rectangle was only drawn on the closest face to the camera to clearly let the users recognize the face that will be followed by the drone. 
+<br /><br />
+The code snippet for this configuration is as follows (from `utils.py`):<br />
+
 
 
 
